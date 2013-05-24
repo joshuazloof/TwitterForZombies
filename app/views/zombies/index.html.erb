@@ -12,7 +12,7 @@
 
 <% @zombies.each do |zombie| %>
   <tr>
-    <%if zombie.name == "Courtney"%>
+    <%if zombie.name.include? "Courtney"%>
     <td><courtney><%= zombie.name %></courtney></td>
     <%else%>
     <td><%= zombie.name %></td>
