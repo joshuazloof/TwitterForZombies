@@ -12,7 +12,11 @@
 
 <% @zombies.each do |zombie| %>
   <tr>
+    <%if zombie.name == "Courtney"%>
+    <td><courtney><%= zombie.name %></courtney></td>
+    <%else%>
     <td><%= zombie.name %></td>
+    <%end%>
     <td><%= zombie.bio %></td>
     <td><%= zombie.age %></td>
     <td><%= link_to 'Show', zombie %></td>
